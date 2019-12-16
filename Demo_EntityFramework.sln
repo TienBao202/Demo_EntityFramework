@@ -9,12 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_DatabaseFirst", "Demo_
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo_ModelFirst", "Demo_ModelFirst\Demo_ModelFirst.csproj", "{DB113D2F-1F66-4C26-BF9B-1BA9ACC547F7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database_Script", "Database_Script", "{02FE7D8A-182B-4B0D-8CBF-F4F1FF535A43}"
-	ProjectSection(SolutionItems) = preProject
-		C:\Users\tienb\Desktop\DemoCodeFirst.sql = C:\Users\tienb\Desktop\DemoCodeFirst.sql
-		C:\Users\tienb\Desktop\DemoDatabaseFirst.sql = C:\Users\tienb\Desktop\DemoDatabaseFirst.sql
-		C:\Users\tienb\Desktop\DemoModelFirst.sql = C:\Users\tienb\Desktop\DemoModelFirst.sql
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D9637997-5272-4E55-BC36-2CBA63204E44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,6 +29,10 @@ Global
 		{DB113D2F-1F66-4C26-BF9B-1BA9ACC547F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB113D2F-1F66-4C26-BF9B-1BA9ACC547F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB113D2F-1F66-4C26-BF9B-1BA9ACC547F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9637997-5272-4E55-BC36-2CBA63204E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9637997-5272-4E55-BC36-2CBA63204E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9637997-5272-4E55-BC36-2CBA63204E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9637997-5272-4E55-BC36-2CBA63204E44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
