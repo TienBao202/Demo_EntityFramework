@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Demo_CodeFirst.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                @Html.ActionLink("Thêm mới", "Create", "CodeFirst", new { id = 0 },
+                new { data_modal = "", @class = "btn btn-primary" })
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <span>
+                    <i class="glyphicon glyphicon-list"></i> Danh sách nhân viên
+                </span>
+            </div>
+            <div class="panel-body">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Mã nhân viên</th>
+                            <th>Tên nhân viên</th>
+                            <th>Ngày sinh</th>
+                            <th>Giới tính</th>
+                            <th>Email</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.Code</td>
+                            <td>@item.Name</td>
+                            <td>@item.BirthDay</td>
+                            <td>@item.Gender</td>
+                            <td>@item.Email</td>
+                            <td>
+                                @Html.ActionLink(" Xem", "Details", "CodeFirst", new { id = item.ID },
+                                new { data_modal = "", @class = "glyphicon glyphicon-info-sign btn btn-info btn-xs" })
+                                @Html.ActionLink(" Sửa", "Edit", "CodeFirst", new { id = item.ID },
+                                new { data_modal = "", @class = "glyphicon glyphicon-edit btn btn-success btn-xs" })
+                                @Html.ActionLink(" Xóa", "Delete", "CodeFirst", new { id = item.ID },
+                               new { data_modal = "", @class = "glyphicon glyphicon-trash btn btn-danger btn-xs" })
+
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            <div class="panel-footer"></div>
+        </div>
+    </div>
+</div>
+
+
